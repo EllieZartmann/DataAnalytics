@@ -1,0 +1,21 @@
+order_id,customer_id,order_date,product_category,product_name,price,quantity,payment_method,country,shipping_time_days,returned
+1001,C001,2025-01-05,Electronics,Wireless Mouse,25.99,2,Credit Card,Germany,3,No
+1002,C002,2025-01-07,Clothing,T-Shirt,15.00,1,PayPal,Germany,5,No
+1003,C003,2025-01-08,Electronics,Headphones,79.99,1,Credit Card,France,4,Yes
+1004,C001,2025-01-10,Home,Blender,49.99,1,Klarna,Germany,6,No
+1005,C004,2025-01-11,Clothing,Jeans,60.00,1,PayPal,Spain,7,Yes
+1006,C005,2025-01-12,Electronics,Keyboard,45.50,1,Credit Card,Germany,3,No
+1007,C006,2025-01-15,Home,Coffee Maker,89.99,1,Credit Card,Italy,5,No
+1008,C002,2025-01-18,Clothing,Sneakers,120.00,1,PayPal,Germany,4,No
+1009,C007,2025-01-20,Electronics,Smartphone,699.00,1,Credit Card,Germany,2,No
+1010,C008,2025-01-22,Home,Vacuum Cleaner,150.00,1,Klarna,France,6,Yes
+1011,C009,2025-01-25,Clothing,Jacket,85.00,1,Credit Card,Germany,5,No
+1012,C003,2025-01-27,Electronics,Tablet,299.00,1,PayPal,France,3,No
+1013,C010,2025-01-29,Home,Toaster,35.00,2,Klarna,Spain,7,No
+1014,C011,2025-02-01,Clothing,Hat,20.00,3,Credit Card,Germany,4,No
+1015,C012,2025-02-03,Electronics,Smartwatch,199.99,1,PayPal,Italy,3,Yes
+1016,C004,2025-02-05,Home,Air Fryer,120.00,1,Credit Card,Spain,6,No
+1017,C013,2025-02-08,Clothing,Sweater,45.00,2,Klarna,Germany,5,No
+1018,C014,2025-02-10,Electronics,Laptop,999.00,1,Credit Card,Germany,2,No
+1019,C015,2025-02-12,Home,Microwave,130.00,1,PayPal,France,6,Yes
+1020,C001,2025-02-15,Electronics,Monitor,220.00,1,Credit Card,Germany,3,No
