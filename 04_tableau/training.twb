@@ -1,0 +1,1013 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0226.1626                               -->
+<workbook original-version='18.1' source-build='2026.1.0 (20261.26.0226.1626)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='hamon_googlefit_medical_realistic' inline='true' name='federated.0iy7z8g03o8u0w143wl780bn5on4' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='hamon_googlefit_medical_realistic' name='textscan.18o40w510fhxcf1g3clhi0qultr1'>
+            <connection class='textscan' directory='C:/Dev/DataAnalystics/04_tableau' filename='hamon_googlefit_medical_realistic.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.18o40w510fhxcf1g3clhi0qultr1' name='hamon_googlefit_medical_realistic.csv' table='[hamon_googlefit_medical_realistic#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='de_DE'>
+            <column datatype='integer' name='user_id' ordinal='0' />
+            <column datatype='integer' name='age' ordinal='1' />
+            <column datatype='integer' name='sex' ordinal='2' />
+            <column datatype='string' name='bmi' ordinal='3' />
+            <column datatype='integer' name='smoking_status' ordinal='4' />
+            <column datatype='integer' name='family_history_cvd' ordinal='5' />
+            <column datatype='integer' name='fitness_level' ordinal='6' />
+            <column datatype='string' name='height_m' ordinal='7' />
+            <column datatype='string' name='weight_kg' ordinal='8' />
+            <column datatype='date' name='date' ordinal='9' />
+            <column datatype='integer' name='day_index' ordinal='10' />
+            <column datatype='string' name='activity_type' ordinal='11' />
+            <column datatype='integer' name='steps' ordinal='12' />
+            <column datatype='integer' name='heart_points' ordinal='13' />
+            <column datatype='integer' name='move_minutes' ordinal='14' />
+            <column datatype='integer' name='calories_burned' ordinal='15' />
+            <column datatype='string' name='distance_km' ordinal='16' />
+            <column datatype='string' name='step_cadence' ordinal='17' />
+            <column datatype='string' name='cycling_power_watts' ordinal='18' />
+            <column datatype='integer' name='avg_heart_rate' ordinal='19' />
+            <column datatype='integer' name='resting_hr' ordinal='20' />
+            <column datatype='integer' name='hrv' ordinal='21' />
+            <column datatype='string' name='bp_systolic' ordinal='22' />
+            <column datatype='string' name='bp_diastolic' ordinal='23' />
+            <column datatype='string' name='fasting_glucose' ordinal='24' />
+            <column datatype='string' name='postprandial_glucose' ordinal='25' />
+            <column datatype='integer' name='spo2' ordinal='26' />
+            <column datatype='string' name='body_temp_c' ordinal='27' />
+            <column datatype='string' name='sleep_hours' ordinal='28' />
+            <column datatype='string' name='sleep_efficiency' ordinal='29' />
+            <column datatype='integer' name='fatigue_score' ordinal='30' />
+            <column datatype='integer' name='calories_consumed' ordinal='31' />
+            <column datatype='string' name='water_intake_l' ordinal='32' />
+            <column datatype='boolean' name='sleep_data_available' ordinal='33' />
+            <column datatype='boolean' name='bp_measured' ordinal='34' />
+            <column datatype='boolean' name='glucose_measured' ordinal='35' />
+            <column datatype='integer' name='cardiometabolic_risk_state' ordinal='36' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[hamon_googlefit_medical_realistic.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;de&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;de_DE&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>user_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[user_id]</local-name>
+            <parent-name>[hamon_googlefit_medical_realistic.csv]</parent-name>
+            <remote-alias>user_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hamon_googlefit_medical_realistic.csv_F9CB1681F7B64E96B88F934BBAF268D8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[age]</local-name>
+            <parent-name>[hamon_googlefit_medical_realistic.csv]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hamon_googlefit_medical_realistic.csv_F9CB1681F7B64E96B88F934BBAF268D8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sex</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sex]</local-name>
+            <parent-name>[hamon_googlefit_medical_realistic.csv]</parent-name>
+            <remote-alias>sex</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hamon_googlefit_medical_realistic.csv_F9CB1681F7B64E96B88F934BBAF268D8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bmi</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[bmi]</local-name>
+            <parent-name>[hamon_googlefit_medical_realistic.csv]</parent-name>
+            <remote-alias>bmi</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[hamon_googlefit_medical_realistic.csv_F9CB1681F7B64E96B88F934BBAF268D8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>smoking_status</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[smoking_status]</local-name>
+            <parent-name>[hamon_googlefit_medical_realistic.csv]</parent-name>
+            <remote-alias>smoking_status</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hamon_googlefit_medical_realistic.csv_F9CB1681F7B64E96B88F934BBAF268D8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>family_history_cvd</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[family_history_cvd]</local-name>
+            <parent-name>[hamon_googlefit_medical_realistic.csv]</parent-name>
+            <remote-alias>family_history_cvd</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hamon_googlefit_medical_realistic.csv_F9CB1681F7B64E96B88F934BBAF268D8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fitness_level</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[fitness_level]</local-name>
+            <parent-name>[hamon_googlefit_medical_realistic.csv]</parent-name>
+            <remote-alias>fitness_level</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hamon_googlefit_medical_realistic.csv_F9CB1681F7B64E96B88F934BBAF268D8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>height_m</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[height_m]</local-name>
+            <parent-name>[hamon_googlefit_medical_realistic.csv]</parent-name>
+            <remote-alias>height_m</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[hamon_googlefit_medical_realistic.csv_F9CB1681F7B64E96B88F934BBAF268D8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>weight_kg</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[weight_kg]</local-name>
+            <parent-name>[hamon_googlefit_medical_realistic.csv]</parent-name>
+            <remote-alias>weight_kg</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[hamon_googlefit_medical_realistic.csv_F9CB1681F7B64E96B88F934BBAF268D8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[hamon_googlefit_medical_realistic.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hamon_googlefit_medical_realistic.csv_F9CB1681F7B64E96B88F934BBAF268D8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>day_index</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[day_index]</local-name>
+            <parent-name>[hamon_googlefit_medical_realistic.csv]</parent-name>
+            <remote-alias>day_index</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hamon_googlefit_medical_realistic.csv_F9CB1681F7B64E96B88F934BBAF268D8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>activity_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[activity_type]</local-name>
+            <parent-name>[hamon_googlefit_medical_realistic.csv]</parent-name>
+            <remote-alias>activity_type</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[hamon_googlefit_medical_realistic.csv_F9CB1681F7B64E96B88F934BBAF268D8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>steps</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[steps]</local-name>
+            <parent-name>[hamon_googlefit_medical_realistic.csv]</parent-name>
+            <remote-alias>steps</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hamon_googlefit_medical_realistic.csv_F9CB1681F7B64E96B88F934BBAF268D8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>heart_points</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[heart_points]</local-name>
+            <parent-name>[hamon_googlefit_medical_realistic.csv]</parent-name>
+            <remote-alias>heart_points</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hamon_googlefit_medical_realistic.csv_F9CB1681F7B64E96B88F934BBAF268D8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>move_minutes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[move_minutes]</local-name>
+            <parent-name>[hamon_googlefit_medical_realistic.csv]</parent-name>
+            <remote-alias>move_minutes</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hamon_googlefit_medical_realistic.csv_F9CB1681F7B64E96B88F934BBAF268D8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>calories_burned</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[calories_burned]</local-name>
+            <parent-name>[hamon_googlefit_medical_realistic.csv]</parent-name>
+            <remote-alias>calories_burned</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hamon_googlefit_medical_realistic.csv_F9CB1681F7B64E96B88F934BBAF268D8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>distance_km</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[distance_km]</local-name>
+            <parent-name>[hamon_googlefit_medical_realistic.csv]</parent-name>
+            <remote-alias>distance_km</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[hamon_googlefit_medical_realistic.csv_F9CB1681F7B64E96B88F934BBAF268D8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>step_cadence</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[step_cadence]</local-name>
+            <parent-name>[hamon_googlefit_medical_realistic.csv]</parent-name>
+            <remote-alias>step_cadence</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[hamon_googlefit_medical_realistic.csv_F9CB1681F7B64E96B88F934BBAF268D8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cycling_power_watts</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[cycling_power_watts]</local-name>
+            <parent-name>[hamon_googlefit_medical_realistic.csv]</parent-name>
+            <remote-alias>cycling_power_watts</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[hamon_googlefit_medical_realistic.csv_F9CB1681F7B64E96B88F934BBAF268D8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_heart_rate</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[avg_heart_rate]</local-name>
+            <parent-name>[hamon_googlefit_medical_realistic.csv]</parent-name>
+            <remote-alias>avg_heart_rate</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hamon_googlefit_medical_realistic.csv_F9CB1681F7B64E96B88F934BBAF268D8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>resting_hr</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[resting_hr]</local-name>
+            <parent-name>[hamon_googlefit_medical_realistic.csv]</parent-name>
+            <remote-alias>resting_hr</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hamon_googlefit_medical_realistic.csv_F9CB1681F7B64E96B88F934BBAF268D8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hrv</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[hrv]</local-name>
+            <parent-name>[hamon_googlefit_medical_realistic.csv]</parent-name>
+            <remote-alias>hrv</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hamon_googlefit_medical_realistic.csv_F9CB1681F7B64E96B88F934BBAF268D8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bp_systolic</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[bp_systolic]</local-name>
+            <parent-name>[hamon_googlefit_medical_realistic.csv]</parent-name>
+            <remote-alias>bp_systolic</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[hamon_googlefit_medical_realistic.csv_F9CB1681F7B64E96B88F934BBAF268D8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bp_diastolic</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[bp_diastolic]</local-name>
+            <parent-name>[hamon_googlefit_medical_realistic.csv]</parent-name>
+            <remote-alias>bp_diastolic</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[hamon_googlefit_medical_realistic.csv_F9CB1681F7B64E96B88F934BBAF268D8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fasting_glucose</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[fasting_glucose]</local-name>
+            <parent-name>[hamon_googlefit_medical_realistic.csv]</parent-name>
+            <remote-alias>fasting_glucose</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[hamon_googlefit_medical_realistic.csv_F9CB1681F7B64E96B88F934BBAF268D8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>postprandial_glucose</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[postprandial_glucose]</local-name>
+            <parent-name>[hamon_googlefit_medical_realistic.csv]</parent-name>
+            <remote-alias>postprandial_glucose</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[hamon_googlefit_medical_realistic.csv_F9CB1681F7B64E96B88F934BBAF268D8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>spo2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[spo2]</local-name>
+            <parent-name>[hamon_googlefit_medical_realistic.csv]</parent-name>
+            <remote-alias>spo2</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hamon_googlefit_medical_realistic.csv_F9CB1681F7B64E96B88F934BBAF268D8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>body_temp_c</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[body_temp_c]</local-name>
+            <parent-name>[hamon_googlefit_medical_realistic.csv]</parent-name>
+            <remote-alias>body_temp_c</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[hamon_googlefit_medical_realistic.csv_F9CB1681F7B64E96B88F934BBAF268D8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sleep_hours</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sleep_hours]</local-name>
+            <parent-name>[hamon_googlefit_medical_realistic.csv]</parent-name>
+            <remote-alias>sleep_hours</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[hamon_googlefit_medical_realistic.csv_F9CB1681F7B64E96B88F934BBAF268D8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sleep_efficiency</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sleep_efficiency]</local-name>
+            <parent-name>[hamon_googlefit_medical_realistic.csv]</parent-name>
+            <remote-alias>sleep_efficiency</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[hamon_googlefit_medical_realistic.csv_F9CB1681F7B64E96B88F934BBAF268D8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fatigue_score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[fatigue_score]</local-name>
+            <parent-name>[hamon_googlefit_medical_realistic.csv]</parent-name>
+            <remote-alias>fatigue_score</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hamon_googlefit_medical_realistic.csv_F9CB1681F7B64E96B88F934BBAF268D8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>calories_consumed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[calories_consumed]</local-name>
+            <parent-name>[hamon_googlefit_medical_realistic.csv]</parent-name>
+            <remote-alias>calories_consumed</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hamon_googlefit_medical_realistic.csv_F9CB1681F7B64E96B88F934BBAF268D8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>water_intake_l</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[water_intake_l]</local-name>
+            <parent-name>[hamon_googlefit_medical_realistic.csv]</parent-name>
+            <remote-alias>water_intake_l</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[hamon_googlefit_medical_realistic.csv_F9CB1681F7B64E96B88F934BBAF268D8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sleep_data_available</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[sleep_data_available]</local-name>
+            <parent-name>[hamon_googlefit_medical_realistic.csv]</parent-name>
+            <remote-alias>sleep_data_available</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hamon_googlefit_medical_realistic.csv_F9CB1681F7B64E96B88F934BBAF268D8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bp_measured</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[bp_measured]</local-name>
+            <parent-name>[hamon_googlefit_medical_realistic.csv]</parent-name>
+            <remote-alias>bp_measured</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hamon_googlefit_medical_realistic.csv_F9CB1681F7B64E96B88F934BBAF268D8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>glucose_measured</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[glucose_measured]</local-name>
+            <parent-name>[hamon_googlefit_medical_realistic.csv]</parent-name>
+            <remote-alias>glucose_measured</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hamon_googlefit_medical_realistic.csv_F9CB1681F7B64E96B88F934BBAF268D8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cardiometabolic_risk_state</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[cardiometabolic_risk_state]</local-name>
+            <parent-name>[hamon_googlefit_medical_realistic.csv]</parent-name>
+            <remote-alias>cardiometabolic_risk_state</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hamon_googlefit_medical_realistic.csv_F9CB1681F7B64E96B88F934BBAF268D8]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='hamon_googlefit_medical_realistic.csv' datatype='table' name='[__tableau_internal_object_id__].[hamon_googlefit_medical_realistic.csv_F9CB1681F7B64E96B88F934BBAF268D8]' role='measure' type='quantitative' />
+      <column caption='Activity Type' datatype='string' name='[activity_type]' role='dimension' type='nominal' />
+      <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+      <column caption='Avg Heart Rate' datatype='integer' name='[avg_heart_rate]' role='measure' type='quantitative' />
+      <column caption='Bmi' datatype='string' name='[bmi]' role='dimension' type='nominal' />
+      <column caption='Body Temp C' datatype='string' name='[body_temp_c]' role='dimension' type='nominal' />
+      <column caption='Bp Diastolic' datatype='string' name='[bp_diastolic]' role='dimension' type='nominal' />
+      <column caption='Bp Measured' datatype='boolean' name='[bp_measured]' role='dimension' type='nominal' />
+      <column caption='Bp Systolic' datatype='string' name='[bp_systolic]' role='dimension' type='nominal' />
+      <column caption='Calories Burned' datatype='integer' name='[calories_burned]' role='measure' type='quantitative' />
+      <column caption='Calories Consumed' datatype='integer' name='[calories_consumed]' role='measure' type='quantitative' />
+      <column caption='Cardiometabolic Risk State' datatype='integer' name='[cardiometabolic_risk_state]' role='measure' type='quantitative' />
+      <column caption='Cycling Power Watts' datatype='string' name='[cycling_power_watts]' role='dimension' type='nominal' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Day Index' datatype='integer' name='[day_index]' role='dimension' type='quantitative' />
+      <column caption='Distance Km' datatype='string' name='[distance_km]' role='dimension' type='nominal' />
+      <column caption='Family History Cvd' datatype='integer' name='[family_history_cvd]' role='measure' type='quantitative' />
+      <column caption='Fasting Glucose' datatype='string' name='[fasting_glucose]' role='dimension' type='nominal' />
+      <column caption='Fatigue Score' datatype='integer' name='[fatigue_score]' role='measure' type='quantitative' />
+      <column caption='Fitness Level' datatype='integer' name='[fitness_level]' role='measure' type='quantitative' />
+      <column caption='Glucose Measured' datatype='boolean' name='[glucose_measured]' role='dimension' type='nominal' />
+      <column caption='Heart Points' datatype='integer' name='[heart_points]' role='measure' type='quantitative' />
+      <column caption='Height M' datatype='string' name='[height_m]' role='dimension' type='nominal' />
+      <column caption='Hrv' datatype='integer' name='[hrv]' role='measure' type='quantitative' />
+      <column caption='Move Minutes' datatype='integer' name='[move_minutes]' role='measure' type='quantitative' />
+      <column caption='Postprandial Glucose' datatype='string' name='[postprandial_glucose]' role='dimension' type='nominal' />
+      <column caption='Resting Hr' datatype='integer' name='[resting_hr]' role='measure' type='quantitative' />
+      <column caption='Sex' datatype='integer' name='[sex]' role='measure' type='quantitative' />
+      <column caption='Sleep Data Available' datatype='boolean' name='[sleep_data_available]' role='dimension' type='nominal' />
+      <column caption='Sleep Efficiency' datatype='string' name='[sleep_efficiency]' role='dimension' type='nominal' />
+      <column caption='Sleep Hours' datatype='string' name='[sleep_hours]' role='dimension' type='nominal' />
+      <column caption='Smoking Status' datatype='integer' name='[smoking_status]' role='measure' type='quantitative' />
+      <column caption='Spo2' datatype='integer' name='[spo2]' role='measure' type='quantitative' />
+      <column caption='Step Cadence' datatype='string' name='[step_cadence]' role='dimension' type='nominal' />
+      <column caption='Steps' datatype='integer' name='[steps]' role='measure' type='quantitative' />
+      <column caption='User Id' datatype='integer' name='[user_id]' role='dimension' type='ordinal' />
+      <column caption='Water Intake L' datatype='string' name='[water_intake_l]' role='dimension' type='nominal' />
+      <column caption='Weight Kg' datatype='string' name='[weight_kg]' role='dimension' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Deutschland&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='hamon_googlefit_medical_realistic.csv' id='hamon_googlefit_medical_realistic.csv_F9CB1681F7B64E96B88F934BBAF268D8'>
+            <properties context=''>
+              <relation connection='textscan.18o40w510fhxcf1g3clhi0qultr1' name='hamon_googlefit_medical_realistic.csv' table='[hamon_googlefit_medical_realistic#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='de_DE'>
+                  <column datatype='integer' name='user_id' ordinal='0' />
+                  <column datatype='integer' name='age' ordinal='1' />
+                  <column datatype='integer' name='sex' ordinal='2' />
+                  <column datatype='string' name='bmi' ordinal='3' />
+                  <column datatype='integer' name='smoking_status' ordinal='4' />
+                  <column datatype='integer' name='family_history_cvd' ordinal='5' />
+                  <column datatype='integer' name='fitness_level' ordinal='6' />
+                  <column datatype='string' name='height_m' ordinal='7' />
+                  <column datatype='string' name='weight_kg' ordinal='8' />
+                  <column datatype='date' name='date' ordinal='9' />
+                  <column datatype='integer' name='day_index' ordinal='10' />
+                  <column datatype='string' name='activity_type' ordinal='11' />
+                  <column datatype='integer' name='steps' ordinal='12' />
+                  <column datatype='integer' name='heart_points' ordinal='13' />
+                  <column datatype='integer' name='move_minutes' ordinal='14' />
+                  <column datatype='integer' name='calories_burned' ordinal='15' />
+                  <column datatype='string' name='distance_km' ordinal='16' />
+                  <column datatype='string' name='step_cadence' ordinal='17' />
+                  <column datatype='string' name='cycling_power_watts' ordinal='18' />
+                  <column datatype='integer' name='avg_heart_rate' ordinal='19' />
+                  <column datatype='integer' name='resting_hr' ordinal='20' />
+                  <column datatype='integer' name='hrv' ordinal='21' />
+                  <column datatype='string' name='bp_systolic' ordinal='22' />
+                  <column datatype='string' name='bp_diastolic' ordinal='23' />
+                  <column datatype='string' name='fasting_glucose' ordinal='24' />
+                  <column datatype='string' name='postprandial_glucose' ordinal='25' />
+                  <column datatype='integer' name='spo2' ordinal='26' />
+                  <column datatype='string' name='body_temp_c' ordinal='27' />
+                  <column datatype='string' name='sleep_hours' ordinal='28' />
+                  <column datatype='string' name='sleep_efficiency' ordinal='29' />
+                  <column datatype='integer' name='fatigue_score' ordinal='30' />
+                  <column datatype='integer' name='calories_consumed' ordinal='31' />
+                  <column datatype='string' name='water_intake_l' ordinal='32' />
+                  <column datatype='boolean' name='sleep_data_available' ordinal='33' />
+                  <column datatype='boolean' name='bp_measured' ordinal='34' />
+                  <column datatype='boolean' name='glucose_measured' ordinal='35' />
+                  <column datatype='integer' name='cardiometabolic_risk_state' ordinal='36' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Blatt 2'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{12523C89-33E6-4794-BDC5-0A2FD978791D}' />
+    </worksheet>
+    <worksheet name='HeatMap Max Heart Points per user'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hamon_googlefit_medical_realistic' name='federated.0iy7z8g03o8u0w143wl780bn5on4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0iy7z8g03o8u0w143wl780bn5on4'>
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[date]' derivation='Day' name='[dy:date:ok]' pivot='key' type='ordinal' />
+            <column caption='Heart Points' datatype='integer' name='[heart_points]' role='measure' type='quantitative' />
+            <column-instance column='[heart_points]' derivation='Max' name='[max:heart_points:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[date]' derivation='Month' name='[mn:date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[user_id]' derivation='None' name='[none:user_id:ok]' pivot='key' type='ordinal' />
+            <column caption='User Id' datatype='integer' name='[user_id]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0iy7z8g03o8u0w143wl780bn5on4].[none:user_id:ok]'>
+            <groupfilter function='level-members' level='[none:user_id:ok]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0iy7z8g03o8u0w143wl780bn5on4].[none:user_id:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0iy7z8g03o8u0w143wl780bn5on4].[max:heart_points:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='688' />
+                <format attr='maxheight' value='688' />
+                <format attr='minwidth' value='1200' />
+                <format attr='maxwidth' value='1200' />
+                <format attr='aspect' value='0' />
+                <format attr='minwidth' value='1200' />
+                <format attr='maxwidth' value='1200' />
+                <format attr='minheight' value='688' />
+                <format attr='maxheight' value='688' />
+                <format attr='aspect' value='0' />
+                <format attr='minwidth' value='1200' />
+                <format attr='maxwidth' value='1200' />
+                <format attr='minheight' value='688' />
+                <format attr='maxheight' value='688' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0iy7z8g03o8u0w143wl780bn5on4].[none:user_id:ok]</rows>
+        <cols>([federated.0iy7z8g03o8u0w143wl780bn5on4].[mn:date:ok] / [federated.0iy7z8g03o8u0w143wl780bn5on4].[dy:date:ok])</cols>
+      </table>
+      <simple-id uuid='{4E665C37-DC1F-4F7C-AE7A-078D0CF9B417}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='HeatMap Max Heart Points per user'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='4' param='[federated.0iy7z8g03o8u0w143wl780bn5on4].[max:heart_points:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0iy7z8g03o8u0w143wl780bn5on4].[none:bmi:nk]</field>
+            <field>[federated.0iy7z8g03o8u0w143wl780bn5on4].[none:glucose_measured:nk]</field>
+            <field>[federated.0iy7z8g03o8u0w143wl780bn5on4].[none:height_m:nk]</field>
+            <field>[federated.0iy7z8g03o8u0w143wl780bn5on4].[none:sleep_data_available:nk]</field>
+            <field>[federated.0iy7z8g03o8u0w143wl780bn5on4].[none:user_id:ok]</field>
+            <field>[federated.0iy7z8g03o8u0w143wl780bn5on4].[none:weight_kg:nk]</field>
+            <field>[federated.0iy7z8g03o8u0w143wl780bn5on4].[yr:date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{EDBF1F1C-6965-4856-9A99-F1975C11EA2E}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Blatt 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0iy7z8g03o8u0w143wl780bn5on4].[none:height_m:nk]</field>
+            <field>[federated.0iy7z8g03o8u0w143wl780bn5on4].[none:sleep_hours:nk]</field>
+            <field>[federated.0iy7z8g03o8u0w143wl780bn5on4].[none:step_cadence:nk]</field>
+            <field>[federated.0iy7z8g03o8u0w143wl780bn5on4].[none:user_id:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{459FEA51-9144-43F2-9079-54E32D8C25B0}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Blatt 2' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='HeatMap Max Heart Points per user' width='192'>
+      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
+      HNrz/wEqht8w7Y8pgQAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
